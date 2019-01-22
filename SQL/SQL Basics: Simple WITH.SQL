@@ -35,3 +35,14 @@ WHERE (price) > 90.00);
 
 
 --用到了WITH 这个命令，还有WHERE IN这个方法。
+
+
+/*
+别的人写的回答
+*/
+WITH special_sales AS
+  (select * from sales where price > 90)
+  
+  select id, name from departments
+  
+WHERE id IN (SELECT department_id FROM special_sales)

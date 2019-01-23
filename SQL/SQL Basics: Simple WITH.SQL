@@ -46,3 +46,13 @@ WITH special_sales AS
   select id, name from departments
   
 WHERE id IN (SELECT department_id FROM special_sales)
+
+
+--注意点：
+/*
+WITH clause allows you to give a sub-query block a name (a process also called sub-query refactoring), 
+which can be referenced in several places within the main SQL query.
+
+WHERE IN : 
+
+*/

@@ -40,3 +40,5 @@ HAVING SUM(p.price) > 1000
 ORDER BY m.id;
 
 SELECT * FROM members_approved_for_voucher;
+
+/*凭借此题一下从7段上升到六段*/

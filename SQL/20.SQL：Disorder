@@ -1,0 +1,5 @@
+
+
+SELECT *
+FROM numbers
+ORDER BY random(); --这个想法，一般人还真的难以想到。。。
